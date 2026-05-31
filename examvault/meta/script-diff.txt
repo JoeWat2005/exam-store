@@ -1,0 +1,97 @@
+24,27c24,30
+<   Mentioned in 40 vault files (top 10 by frequency):
+<     - indexes/IF-YOU-SEE-X.md  (33×)
+<     - indexes/TYPE-SIGNATURE-DATABASE.md  (32×)
+<     - indexes/PROBLEM-NUMBER-INDEX.md  (22×)
+---
+>   Mentioned in 71 vault files (top 10 by frequency):
+>     - indexes/IF-YOU-SEE-X.md  (66×)
+>     - indexes/TYPE-SIGNATURE-DATABASE.md  (62×)
+>     - indexes/PROBLEM-NUMBER-INDEX.md  (44×)
+>     - indexes/KEYWORD-INDEX.md  (28×)
+>     - indexes/LECTURE-INDEX.md  (20×)
+>     - meta/COURSE-COVERAGE.md  (16×)
+29,31d31
+<     - indexes/KEYWORD-INDEX.md  (14×)
+<     - meta/COURSE-COVERAGE.md  (13×)
+<     - indexes/LECTURE-INDEX.md  (10×)
+33,34c33,34
+<     - meta/COURSE-MAP.md  (6×)
+<     - archetypes/A08-env-eval.md  (5×)
+---
+>     - archetypes/A08-env-eval.md  (6×)
+>     - exam-day/IN-EXAM-WORKFLOW.md  (6×)
+51,56c51,57
+<   Mentioned in 21 vault files (top 10 by frequency):
+<     - indexes/TYPE-SIGNATURE-DATABASE.md  (20×)
+<     - indexes/IF-YOU-SEE-X.md  (17×)
+<     - indexes/KEYWORD-INDEX.md  (12×)
+<     - indexes/PROBLEM-NUMBER-INDEX.md  (10×)
+<     - meta/COURSE-COVERAGE.md  (8×)
+---
+>   Mentioned in 30 vault files (top 10 by frequency):
+>     - indexes/TYPE-SIGNATURE-DATABASE.md  (40×)
+>     - indexes/IF-YOU-SEE-X.md  (34×)
+>     - indexes/KEYWORD-INDEX.md  (24×)
+>     - indexes/PROBLEM-NUMBER-INDEX.md  (20×)
+>     - indexes/LECTURE-INDEX.md  (14×)
+>     - meta/COURSE-COVERAGE.md  (9×)
+58c59
+<     - indexes/LECTURE-INDEX.md  (7×)
+---
+>     - archetypes/A11-bst-ops.md  (6×)
+60,61c61
+<     - archetypes/A11-bst-ops.md  (5×)
+<     - archetypes/A21-list-comp-synthesis.md  (3×)
+---
+>     - archetypes/A01-tree-recursion.md  (3×)
+112c112,113
+<    26×  question-families/state-game-family.md
+---
+>    28×  question-families/state-game-family.md
+>    27×  question-families/state-counter-family.md
+114,115c115,116
+<    24×  question-families/state-counter-family.md
+<    22×  archetypes/A02-state-game.md
+---
+>    24×  archetypes/A02-state-game.md
+>    23×  monads/transformer-stack-order.md
+117a119
+>    20×  interpreters/expr-writer-state.md
+119d120
+<    19×  interpreters/expr-writer-state.md
+121,122d121
+<    18×  question-families/applicative-monad-instance-family.md
+<    18×  quickcheck/state-attacks.md
+124a124,126
+>    17×  question-families/applicative-monad-instance-family.md
+>    17×  quickcheck/state-attacks.md
+>    16×  cross-matrix/bst-x-state.md
+127,128d128
+<    16×  indexes/TYPE-SIGNATURE-DATABASE.md
+<    16×  interpreters/README.md
+156d155
+<     24c  pitfalls/MEDIUM-severity.md
+158d156
+<     32c  cross-matrix/rose-x-state.md
+159a158
+>     43c  pitfalls/MEDIUM-severity.md
+160a160
+>     57c  cross-matrix/rose-x-state.md
+162d161
+<     59c  cross-matrix/rose-x-writer.md
+164,165c163,165
+<     63c  indexes/MOCK-Q-INDEX.md
+<     77c  cross-matrix/expr-x-maybe.md
+---
+>     78c  quickcheck/rose-attacks.md
+>     78c  quickcheck/trees-attacks.md
+>     81c  question-families/tree-validation-family.md
+205,207c205,207
+<      23×  archetypes/A04-matrix-predicate.md
+<      14×  question-families/matrix-predicate-family.md
+<       9×  archetypes/A09-prelude-reimpl.md
+---
+>      22×  archetypes/A04-matrix-predicate.md
+>      16×  question-families/matrix-predicate-family.md
+>       8×  archetypes/A09-prelude-reimpl.md

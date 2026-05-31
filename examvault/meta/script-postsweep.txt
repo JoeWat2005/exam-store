@@ -1,0 +1,307 @@
+===== POST-SWEEP SCRIPT OUTPUT (Sun May 31 13:16:32 GMTST 2026) =====
+----- search_by_archetype.py A01 -----
+Query: 'A01'
+======================================================================
+
+  A01 - Tree-ADT structural recursion
+  Tier:     1   Stars: *****
+  F/D/C/E:  H/M/H/H
+  Primary files:
+    - archetypes/A01-tree-recursion.md
+    - trees/binary-tree.md
+    - trees/rose-tree.md
+  Combines with (weight >= 3):
+    - A02  (w=5)  label-tree pattern (Tree + State)
+    - A03  (w=5)  mapMTree :: Monad m => (a -> m b) -> BT a -> m (BT b)
+    - A05  (w=5)  Mock Q5 circuit :: Expr -> Circuit
+    - A06  (w=5)  Functor instance for BT/Rose
+    - A08  (w=5)  Expr trees in env eval
+    - A11  (w=5)  BST is a BT
+    - A12  (w=4)  Tree to list / table conversion
+    - A20  (w=4)  tree iso laws (Rose ≅ Free [])
+    - A22  (w=4)  Eq/Ord/Show instance on tree
+    - A07  (w=3)  Tree ↔ Table codec (Assignment 2)
+  Mentioned in 90 vault files (top 10 by frequency):
+    - indexes/IF-YOU-SEE-X.md  (66×)
+    - indexes/TYPE-SIGNATURE-DATABASE.md  (62×)
+    - indexes/PROBLEM-NUMBER-INDEX.md  (44×)
+    - indexes/KEYWORD-INDEX.md  (28×)
+    - indexes/LECTURE-INDEX.md  (20×)
+    - indexes/ARCHETYPE-INDEX.md  (16×)
+    - meta/COURSE-COVERAGE.md  (16×)
+    - archetypes/README.md  (15×)
+    - indexes/MUTATION-INDEX.md  (11×)
+    - archetypes/A08-env-eval.md  (8×)
+
+======================================================================
+See also: archetypes/README.md for the full priority table.
+----- search_by_archetype.py A11 -----
+Query: 'A11'
+======================================================================
+
+  A11 - BST operations
+  Tier:     2   Stars: ***
+  F/D/C/E:  M/M/M/M
+  Primary files:
+    - archetypes/A11-bst-ops.md
+    - trees/bst.md
+  Combines with (weight >= 3):
+    - A01  (w=5)  BST is a BT
+  Mentioned in 55 vault files (top 10 by frequency):
+    - indexes/TYPE-SIGNATURE-DATABASE.md  (40×)
+    - indexes/IF-YOU-SEE-X.md  (38×)
+    - indexes/KEYWORD-INDEX.md  (24×)
+    - indexes/PROBLEM-NUMBER-INDEX.md  (20×)
+    - indexes/LECTURE-INDEX.md  (14×)
+    - meta/COURSE-COVERAGE.md  (9×)
+    - archetypes/A11-bst-ops.md  (7×)
+    - archetypes/README.md  (7×)
+    - indexes/ARCHETYPE-INDEX.md  (7×)
+    - meta/COURSE-MAP.md  (6×)
+
+======================================================================
+See also: archetypes/README.md for the full priority table.
+----- search_by_type.py 'Monad m => m a -> b -> m a' -----
+No rule matched signature: 'Monad m => m a -> b -> m a'
+
+Try a more general shape, e.g.:
+  python search_by_type.py "Tree a -> Int"
+  python search_by_type.py "Monad m =>"
+  python search_by_type.py "[[Int]] -> Bool"
+
+Or browse indexes/TYPE-SIGNATURE-DATABASE.md directly.
+----- search_by_monad.py State -----
+Monad: State (State s)
+Description: newtype State s a = State { runState :: s -> (a, s) }; threaded mutable state.
+Kind: concrete-monad
+Files: monads/state.md
+Implements: Functor, Applicative, Monad
+Tags: state, tier-1
+======================================================================
+
+Related monads / classes (edges):
+  [implements                    ] Applicative               (w=5) 
+  [can-stack-with                ] Either                    (w=5) calculator with state + error
+  [implements                    ] Functor                   (w=5) 
+  [implements                    ] Monad                     (w=5) 
+  [implements                    ] MonadState                (w=5) 
+  [specialises-to (incoming)     ] StateEither               (w=5) 
+  [transformer-of (incoming)     ] StateT                    (w=5) StateT s Identity is iso to State s
+  [specialises-to (incoming)     ] StateWriter               (w=5) 
+  [can-stack-with (incoming)     ] FSum                      (w=4) FSum (State s) ...
+  [can-stack-with                ] Writer                    (w=4) state + log
+  [can-stack-with                ] Maybe                     (w=3) state with possible failure
+  [can-stack-with                ] Reader                    (w=3) rare
+  [can-stack-with (incoming)     ] Reader                    (w=3) env + state
+
+Cross-matrix files involving this monad:
+  - cross-matrix/bst-x-state.md
+  - cross-matrix/expr-x-state.md
+  - cross-matrix/game-state.md
+  - cross-matrix/list-x-state.md
+  - cross-matrix/rose-x-state.md
+  - cross-matrix/tree-x-state.md
+
+All vault files mentioning this monad (top 20 by frequency):
+   33×  interpreters/expr-state.md
+   32×  meta/COURSE-MAP.md
+   32×  monads/state.md
+   28×  question-families/state-game-family.md
+   27×  question-families/state-counter-family.md
+   25×  cross-matrix/game-state.md
+   24×  archetypes/A02-state-game.md
+   23×  monads/transformer-stack-order.md
+   21×  indexes/PROBLEM-NUMBER-INDEX.md
+   20×  cross-matrix/expr-x-state.md
+   20×  interpreters/expr-writer-state.md
+   20×  typeclasses/monad.md
+   18×  indexes/MASTER-INDEX.md
+   17×  archetypes/A14-multi-effect-interp.md
+   17×  indexes/CROSS-TOPIC-INDEX.md
+   17×  indexes/PRELUDE-INDEX.md
+   17×  question-families/applicative-monad-instance-family.md
+   17×  quickcheck/state-attacks.md
+   16×  cross-matrix/bst-x-state.md
+   16×  cross-matrix/list-x-state.md
+
+======================================================================
+See monads/state.md for the canonical reference.
+----- search_by_combo.py 'Tree + State' -----
+Combination: 'tree' + 'state'
+======================================================================
+
+Cross-matrix files:
+  - cross-matrix/tree-x-state.md
+
+Archetype mapping:
+  'tree'               -> A01
+  'state'              -> A02
+
+Archetype combines-with weight: 5  (5 = canonical, 0 = never)
+  Note: label-tree pattern (Tree + State)
+  -> This is a strong combination. Open both archetype files:
+    - archetypes/A01-*.md
+    - archetypes/A02-*.md
+
+Files where both terms co-occur (within 500 chars; top 15 by proximity):
+     5c  indexes/README.md
+     7c  HOW-TO-USE.md
+     7c  cross-matrix/tree-x-state.md
+     8c  pitfalls/README.md
+    21c  monads/list-monad.md
+    30c  quickcheck/codec-attacks.md
+    30c  quickcheck/interp-attacks.md
+    30c  quickcheck/lists-attacks.md
+    30c  quickcheck/matrix-attacks.md
+    30c  quickcheck/maybe-either-attacks.md
+    30c  quickcheck/monad-attacks.md
+    30c  quickcheck/numeric-attacks.md
+    30c  quickcheck/PROPERTY-PATTERNS.md
+    30c  quickcheck/QUICKCHECK-ATTACKS.md
+    30c  quickcheck/typeclass-instance-attacks.md
+
+======================================================================
+See cross-matrix/README.md for the data × effect matrix.
+----- mock_q_lookup.py Q3 -----
+Query: 'Q3'
+Matched 1 Mock Q entries.
+======================================================================
+
+  Q3 - Nim with State (gameOver + takeTokens)
+  Archetype: A02
+  Signature(s):
+    gameOver :: NimGame Bool
+    takeTokens :: Int -> Heap -> NimGame ()
+  Marker quirk:
+    `gameOver` has a hardcoded (0,0) test worth 4 free marks: 
+    literally `gameOver = pure True` gets 4/10. `takeTokens` MUST 
+    clamp at 0 (max 0 (a-n)) — marker tests overshooting. 
+  Files:
+    - archetypes/A02-state-game.md
+    - monads/state.md
+    - cross-matrix/game-state.md
+
+======================================================================
+Full source: indexes/MOCK-Q-INDEX.md
+----- prelude_lookup.py transpose -----
+Query: 'transpose'
+Matched 1 entries.
+======================================================================
+
+  transpose
+    Section:  Data.List — extras
+    Sig:      [[a]] -> [[a]]
+    What:     rows ↔ cols
+    Used in:  problem 141 magic square
+    Pitfall:  preserves jaggedness
+
+  Files using 'transpose' (top 12):
+     22×  archetypes/A04-matrix-predicate.md
+     16×  question-families/matrix-predicate-family.md
+      8×  archetypes/A09-prelude-reimpl.md
+      3×  archetypes/A23-mini-game.md
+      1×  archetypes/README.md
+      1×  cross-matrix/game-state.md
+      1×  question-families/README.md
+      1×  question-families/state-game-family.md
+
+======================================================================
+Full reference: indexes/PRELUDE-INDEX.md
+----- study_planner.py 3 -----
+Study plan for 3 days
+======================================================================
+Tiers (from archetypes/README.md):
+  Tier 1 - almost certainly tested (A01, A02, A03, A04, A05, A06, A08)
+  Tier 2 - very likely         (A07, A11, A12, A14, A19, A21, A22, A23)
+  Tier 3 - possible            (A09, A10, A13, A15, A16, A24)
+  Tier 4 - low probability     (A17, A18, A20)
+======================================================================
+
+Day 1:
+    - A01 *****  Tree-ADT structural recursion
+        Read: archetypes/A01-tree-recursion.md
+        Plus: trees/binary-tree.md
+    - A02 *****  State-monad mini-game
+        Read: archetypes/A02-state-game.md
+        Plus: monads/state.md
+    - A03 *****  Generic Monad m => combinator
+        Read: archetypes/A03-generic-monad.md
+        Plus: monads/generic-combinators.md
+    - A04 ****  Matrix predicate via transpose
+        Read: archetypes/A04-matrix-predicate.md
+    - A05 ****  ADT-to-ADT translation
+        Read: archetypes/A05-adt-translation.md
+    - A06 ****  Functor / Applicative / Monad instance
+        Read: archetypes/A06-functor-instance.md
+        Plus: typeclasses/functor.md
+    - A08 ****  Environment evaluator
+        Read: archetypes/A08-env-eval.md
+        Plus: interpreters/expr-reader.md
+
+Day 2:
+    - A07 ****  Codec pair (encode/decode)
+        Read: archetypes/A07-codec-pair.md
+        Plus: question-families/codec-family.md
+    - A23 ****  Mini-game (TTT/Nim/Conway)
+        Read: archetypes/A23-mini-game.md
+        Plus: cross-matrix/game-state.md
+    - A11 ***  BST operations
+        Read: archetypes/A11-bst-ops.md
+        Plus: trees/bst.md
+    - A12 ***  Representation conversion
+        Read: archetypes/A12-rep-conversion.md
+    - A14 ***  Multi-effect interpreter
+        Read: archetypes/A14-multi-effect-interp.md
+        Plus: monads/multi-effect.md
+    - A19 ***  Extend an interpreter
+        Read: archetypes/A19-extend-interpreter.md
+        Plus: interpreters/extend-interpreter.md
+    - A21 ***  List-comp synthesis
+        Read: archetypes/A21-list-comp-synthesis.md
+        Plus: question-families/list-comp-family.md
+
+Day 3 (Mock-test cold + final review):
+    - Sit the mock test cold (timed 2h, no notes).
+    - Read indexes/MOCK-Q-INDEX.md (marker quirks).
+    - Read quickcheck/QUICKCHECK-ATTACKS.md (60s checklist).
+    - Re-read exam-day/ONE-PAGE-PANIC.md.
+
+======================================================================
+After each day:
+  1. Skim quickcheck/<topic>-attacks.md for the family you studied.
+  2. Try 2 sibling problems from question-families/.
+  3. Mark anything you got wrong; revisit on the next floating day.
+
+See archetypes/README.md for the full ranking and 5-Q composition.
+----- topic_dependencies.py Functor -----
+Topic: Functor - Functor
+Description: fmap class.
+Introduced: Week 7
+Tags: advanced
+Files: typeclasses/functor.md
+======================================================================
+
+Direct prerequisites (you must know these first):
+  [prerequisite-of   ] typeclasses-basic               (w=5)  
+  [prerequisite-of   ] higher-order-functions          (w=4)  
+  [prerequisite-of   ] custom-ADTs                     (w=4)  
+
+Transitive prerequisites (full chain, unique):
+  - typeclasses-basic
+  - higher-order-functions
+  - custom-ADTs
+  - pattern-matching
+  - types
+  - polymorphism
+  - list-recursion
+
+Direct downstream (these depend on this topic):
+  [prerequisite-of   ] Applicative                     (w=5)  
+  [prerequisite-of   ] Free-monad                      (w=5)  
+  [prerequisite-of   ] Monad                           (w=4)  
+  [prerequisite-of   ] parser-combinators              (w=4)  
+  [strengthens       ] rigour                          (w=4)  
+
+----------------------------------------------------------------------
+
+See meta/COURSE-MAP.md for full topic blocks.

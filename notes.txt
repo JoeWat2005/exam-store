@@ -1,0 +1,1 @@
+sequenceMTree :: Monad m => Tree (m a) -> m (Tree a) = given data Tree a = Leaf a | Branch (Tree a) (Tree a), traverse the tree recursively and sequence all monadic values inside the tree

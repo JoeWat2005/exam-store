@@ -1,0 +1,14 @@
+# Generator trace log — already suppressed via --log-disable in scripts/notes.sh,
+# ignored here as a safety net in case a different llamafile build writes one.
+main.log
+*.log
+
+# Python bytecode from the scripts/ helpers
+__pycache__/
+*.py[cod]
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
