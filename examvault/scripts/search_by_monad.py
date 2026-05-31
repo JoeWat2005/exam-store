@@ -10,6 +10,8 @@ Examples:
   python search_by_monad.py Maybe
   python search_by_monad.py "MonadError"
 """
+from __future__ import annotations
+
 import sys
 import json
 import pathlib

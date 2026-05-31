@@ -10,6 +10,8 @@ Examples:
   python search_by_combo.py Tree State
   python search_by_combo.py "Rose + Writer"
 """
+from __future__ import annotations
+
 import sys
 import json
 import pathlib
