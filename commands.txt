@@ -1,0 +1,9 @@
+go to root
+
+setup:
+bash /jupyter/work/exam-store/examvault/scripts/vlab-setup.sh
+
+notes (make executable)
+bash /jupyter/work/exam-store/examvault/scripts/notes.sh
+
+these are ran from here

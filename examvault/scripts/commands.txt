@@ -1,0 +1,12 @@
+Search scripts - cd into this directory.
+
+python3 search_by_type.py "Tree a -> Int"
+python3 search_by_archetype.py A02
+python3 search_by_archetype.py "State Monad"
+python3 search_by_keyword.py foldr
+python3 search_by_monad.py State
+python3 search_by_combo.py "Tree + State"
+python3 study_planner.py 7
+python3 topic_dependencies.py Functor
+python3 mock_q_lookup.py Q2
+python3 prelude_lookup.py mapM
